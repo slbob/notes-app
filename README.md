@@ -73,7 +73,7 @@ The API will run on http://localhost:3000
 
 SQLite database (notes.db) is created automatically on first run
 
-📱 Frontend Setup (Expo)
+## 📱 Frontend Setup (Expo)
 npm install
 expo start
 Run the app using:
