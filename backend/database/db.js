@@ -7,6 +7,7 @@ db.serialize(() => {
     email TEXT UNIQUE,
     password TEXT
   )`);
+
   db.run(`CREATE TABLE IF NOT EXISTS notes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
@@ -14,4 +15,5 @@ db.serialize(() => {
     userId INTEGER
   )`);
 });
+
 module.exports = db;
