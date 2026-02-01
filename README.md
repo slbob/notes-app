@@ -35,22 +35,22 @@ The app allows users to securely create, view, edit, and delete personal notes, 
 
 ## 📁 Project Structure
 
-notes-app/
-│
-├── app/ # Expo React Native frontend
-│ └── notes/
-│ └── index.js
-│
-├── backend/ # Backend API
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ ├── database/
-│ ├── app.js
-│ └── server.js
-│
-└── README.md
+  notes-app/
+  │
+  ├── app/ # Expo React Native frontend
+  │ └── notes/
+  │ └── index.js
+  │
+  ├── backend/ # Backend API
+  │ ├── controllers/
+  │ ├── models/
+  │ ├── routes/
+  │ ├── middleware/
+  │ ├── database/
+  │ ├── app.js
+  │ └── server.js
+  │
+  └── README.md
 
 
 ---
