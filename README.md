@@ -35,23 +35,22 @@ The app allows users to securely create, view, edit, and delete personal notes, 
 
 ## 📁 Project Structure
 
-  notes-app/
-  │
-  ├── app/ # Expo React Native frontend
-  │ └── notes/
-  │ └── index.js
-  │
-  ├── backend/ # Backend API
-  │ ├── controllers/
-  │ ├── models/
-  │ ├── routes/
-  │ ├── middleware/
-  │ ├── database/
-  │ ├── app.js
-  │ └── server.js
-  │
-  └── README.md
-
+- notes-app/
+- │
+- ├── app/ # Expo React Native app
+- │ └── notes/
+- │ └── index.js
+- │
+- ├── backend/
+- │ ├── controllers/
+- │ ├── models/
+- │ ├── routes/
+- │ ├── middleware/
+- │ ├── database/
+- │ ├── app.js
+- │ └── server.js
+- │
+- └── README.md
 
 ---
 
@@ -73,7 +72,10 @@ The API will run on http://localhost:3000
 
 SQLite database (notes.db) is created automatically on first run
 
+---
+
 ## 📱 Frontend Setup (Expo)
+
 npm install
 expo start
 Run the app using:
@@ -87,7 +89,10 @@ Expo Go on a physical device
 ⚠️ Important:
 When testing on a real device, replace localhost in API calls with your computer’s local IP address.
 
-🔐 Authentication
+---
+
+## 🔐 Authentication
+
 The app uses JWT-based authentication.
 
 Authentication Flow
@@ -102,7 +107,8 @@ Token is sent in the Authorization header for all protected requests
 Example header:
 
 Authorization: Bearer <JWT_TOKEN>
-📡 API Endpoints
+
+## 📡 API Endpoints
 Auth Routes
 Method	Endpoint	Description
 POST	/auth/register	Register a new user
@@ -125,7 +131,7 @@ Create / Update Note Body
   "title": "My Note",
   "content": "This is the note content"
 }
-❌ Error Handling
+## ❌ Error Handling
 The API returns clear JSON error responses.
 
 Status Code	Meaning
@@ -138,7 +144,7 @@ Example error response:
 {
   "message": "Title required"
 }
-🔒 Security
+## 🔒 Security
 Passwords are hashed using bcrypt
 
 JWT protects all note routes
@@ -147,7 +153,7 @@ Users can only access their own notes
 
 SQL queries are parameterized to prevent injection
 
-🛠 Future Enhancements
+## 🛠 Future Enhancements
 TypeScript support
 
 Frontend form validation
@@ -162,6 +168,6 @@ Dark mode
 
 Unit and integration tests
 
-📄 License
+## 📄 License
 This project is for educational and learning purposes.
 You are free to modify and extend it.
