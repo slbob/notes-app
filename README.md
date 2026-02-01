@@ -37,9 +37,33 @@ The app allows users to securely create, view, edit, and delete personal notes, 
 
 ```
 notes-app/
-├── app/
-├── backend/
-└── README.md
+├─ README.md
+├─ app/                          # Expo (React Native) frontend
+│  └─ notes/
+│     └─ index.js                # Notes screen (UI entry)
+│
+└─ backend/                      # Node.js + Express backend API
+   ├─ server.js                  # Starts the server (port 3000)
+   ├─ app.js                     # Express app setup + route mounting
+   │
+   ├─ database/
+   │  └─ db.js                   # SQLite connection + table creation
+   │
+   ├─ middleware/
+   │  └─ auth.js                 # JWT auth middleware (protects routes)
+   │
+   ├─ models/
+   │  ├─ User.js                 # User DB operations
+   │  └─ Note.js                 # Note DB operations
+   │
+   ├─ controllers/
+   │  ├─ authController.js       # Register/login logic
+   │  └─ noteController.js       # Notes CRUD logic
+   │
+   └─ routes/
+      ├─ authRoutes.js           # /auth/register, /auth/login
+      └─ noteRoutes.js           # /notes CRUD (protected)
+
 ```
 
 ---
